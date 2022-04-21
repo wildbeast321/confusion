@@ -31,3 +31,6 @@ body{
 .navbar-dark{
     background-color: blueviolet;
 }
+.btn{
+    width: 300px;
+}
