@@ -31,6 +31,13 @@ body{
 .navbar-dark{
     background-color: blueviolet;
 }
-.btn{
-    width: 300px;
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+}
+.table{
+    width:300px;
 }
