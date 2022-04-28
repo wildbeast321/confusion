@@ -30,7 +30,7 @@
                         <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                     </ul>
                     <span class="navbar-text">
-                        <a data-toggle="modal" data-target="#loginModal">
+                        <a id="login1" >
                         <span class="fa fa-sign-in"></span> Login</a>
                     </span>
             </div>
@@ -41,7 +41,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" data-dismiss="modal" id="close1">&times;</button>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -76,7 +76,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Reserve A Table</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" data-dismiss="modal" id="close1">&times;</button>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -141,7 +141,7 @@
                     <img src="./img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center ">
-                    <a href="#reserve" class="nav-link" data-toggle="modal" data-target="#reservetable">
+                    <a  class="nav-link" id="reserve1">
                         <button class="btn btn-warning btn-block">
                             Reserve Table
                         </button>
@@ -315,6 +315,21 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){        
+            $("#login1").on('click',function(){
+                $("#loginModal").modal("show");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#reserve1").on("click",function(){
+                $("#reservetable").modal("show")
+            });
+
+        });
+    </script>
     <script>
         $(document).ready(function(){
             $("#mycarousel").carousel( { interval: 3000  } );
